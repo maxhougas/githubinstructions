@@ -1,0 +1,73 @@
+Sign up for github. This should be fairly self-explanatory and no different than signing up for most other web services.
+
+Navigate to your settings. This should be under the dropdown menu in the upper right that is your avatar.
+
+On the left hand menu all the way at the bottom is an item called "Developer settings". Click it.
+
+Once again on the bottom of the left hand menu is an option called "Personal access tokens". Click it.
+
+In the upper right, click "Generate new token".
+
+Write some kind of descriptive note like "Amazing super powers".
+
+Set the expiration to "No expiration".
+
+Check all checkboxes.
+
+***
+***DO NOT CONTINUE UNTIL YOU HAVE READ THROUGH!***
+
+Click "Generate token" at the bottom.
+
+You will be shown your personal access token. DO NOT SHOW THIS TO ANYONE.
+
+Upon leaving or refreshing this page you will not be shown this token again; keep it somewhere safe.
+
+***YOU MAY NOW CONTINUE***
+***
+
+Using the avatar dropdown menu on the upper right select "Your repositories".
+
+Click "New" in the upper right.
+
+Name your repository "test" and give it a description. Optionally check the box to add a README file.
+
+Click "Create repository" at the bottom.
+
+If you chose to create a README file, you will be shown a list of files in your new repository (so far just README.md)
+
+Click the green code button to be presented with an HTTPS url.
+
+If you chose not to create a README file the HTTPS url will be near the top of the page.
+
+Open your bash shell.
+
+Navigate to the folder you would like to clone your repository to.
+
+Run "git clone <url>"
+
+*If you have problems with your url try removing .git from the end.
+
+Cloning your repository will create a new folder called "test" (or whatever you named your repository).
+
+Run "cd test/.git"
+
+Use your favorite text editor to open "config".
+
+Look for a line that starts with "url =". It sould be under the heading [remote "origin"]
+
+Between "https://" and "github" insert the pattern <username>:<personal access token>@
+
+Save changes and close your editor.
+
+Run "cd ..".
+
+Run "echo helloworld > hw.txt".
+
+Run "git add .".
+
+Run 'git commit -m "I'm adding a file!"'.
+
+Run "git push".
+
+Refresh your browser window to verify that hw.txt was successfully pushed.
