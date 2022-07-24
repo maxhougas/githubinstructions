@@ -64,6 +64,10 @@ Run "cd ..".
 
 Run "echo helloworld > hw.txt".
 
+Run git config --global user.email "<your email>"
+
+Run git config --global user.name "<your name>"
+
 Run "git add .".
 
 Run 'git commit -m "I'm adding a file!"'.
