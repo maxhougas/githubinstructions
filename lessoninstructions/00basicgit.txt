@@ -64,8 +64,20 @@ Use your favorite text editor to open "config". It may be easier to do this from
 
 Look for a line that starts with "url =". It sould be under the heading [remote "origin"]
 
+***DEPRICATED***
 Between "https://" and "github" insert the pattern <username>:<personal access token>@
  Your new line should look like "https://<username>:<PAT>@github.com/<username>/test.git"
+***DEPRICATED***
+
+***
+***DO NOT CONTINUE UNTIL YOU HAVE READ THROUGH***
+
+Run 'echo "https://<user name>:<PAT>@github.com" > ~/.git-credentials'. DO NOT SHOW THIS LINE TO ANYONE.
+ On Windows this file is usually located at C:\Users\<user name>\.git-credentials.
+ NB: This will store your credentials in PLAINTEXT!
+
+***YOU MAY NOW CONTINUE***
+***
 
 Save changes and close your editor.
 
