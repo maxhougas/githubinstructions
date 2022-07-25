@@ -1,3 +1,4 @@
+curl -u <user name> https://api.github.com/user/repos -d '{"name":"test","private":false}'
 echo "# docs" >> README.md
 git init
 git add README.md

@@ -1,3 +1,7 @@
+If you are on Windows, follow the pictures in ../installgitwindows/installgithub.htm
+
+If you are on Linux, follow your heart.
+
 Sign up for github. This should be fairly self-explanatory and no different than signing up for most other web services.
 
 Navigate to your settings. This should be under the dropdown menu in the upper right that is your avatar.
@@ -40,29 +44,37 @@ Click the green code button to be presented with an HTTPS url.
 
 If you chose not to create a README file the HTTPS url will be near the top of the page.
 
+Your repository URL should follow the pattern https://github.com/<user name>/test.git
+
 Open your bash shell.
 
 Navigate to the folder you would like to clone your repository to.
+ NB: Cloning a repository will create a sub-folder.
+ NB: Creating a root folder to store all or most of your github projects is recommended. These lessons will assume it is C:\gitprojects
 
 Run "git clone <url>"
-
-*If you have problems with your url try removing .git from the end.
+ If you have problems with your url try removing .git from the end.
 
 Cloning your repository will create a new folder called "test" (or whatever you named your repository).
 
 Run "cd test/.git"
 
-Use your favorite text editor to open "config".
+Use your favorite text editor to open "config". It may be easier to do this from the Windows GUI file explorer.
+ You may have to enable view hidden files. It will be under the "View" menu near the top of the window. The option is a checkbox called "Hidden items". It is a good idea to also check "File name extensions".
 
 Look for a line that starts with "url =". It sould be under the heading [remote "origin"]
 
 Between "https://" and "github" insert the pattern <username>:<personal access token>@
+ Your new line should look like "https://<username>:<PAT>@github.com/<username>/test.git"
 
 Save changes and close your editor.
 
-Run "cd ..".
+Run "cd ..". You should be in the folder "C:\gitprojects\test".
+ The gitbash shell will refer to this as "/c/gitprojects/test". The "pwd" command will print out your current directory (folder).
 
-Run "echo helloworld > hw.txt".
+***DEPRICATED*** Run "echo helloworld > hw.txt". ***DEPRICATED***
+
+Copy the file ./helloworld.htm into your local repository folder ("C:\gitprojects\test" OR "/c/gitprojects/test)
 
 Run git config --global user.email "<your email>"
 
@@ -74,4 +86,15 @@ Run 'git commit -m "I'm adding a file!"'.
 
 Run "git push".
 
-Refresh your browser window to verify that hw.txt was successfully pushed.
+Refresh your browser window to verify that helloworld.htm was successfully pushed.
+
+***YOU SHOULD HAVE***
+A folder "C:\gitprojects\test"
+
+A folder "C:\gitprojects\test\.git"
+
+A file "C:\gitprojects\test\helloworld.htm"
+
+A remote repository "https://github.com/<user name>/test CONTAINING:
+ A file "helloworld.htm"
+***END LESSON 00***

@@ -1,0 +1,21 @@
+This lesson assumes you have successfully completed lesson 00. Check the section of ./00basicgit.txt labeled ***YOU SHOULD HAVE*** before continuing.
+
+Navigate to your local test repository (C:\gitprojects\test) and open your gitbash shell from the right click menu.
+
+Ensure that your local repository is synced with your remote by running
+ Run "git pull".
+  If this fails run "git pull --rebase" or "git pull --merge". For our purposes there should be no difference.
+  You can also run "git config pull.rebase <true or false>" and run "git pull" again.
+
+Run "git checkout -b <branch name>" using "test" for the branch name.
+ This will create and switch to a branch named "test".
+
+Open ./helloworld.htm in your favorite editor.
+
+Update line 7 of ./helloworld.htm by changing "  <title>Document</title> to "  <title>Hello World</title>".
+
+Save the file.
+
+Verify the changes work by opening ./helloworld in your favorite browser.
+ You should see "Hello World" displayed on the active tab.
+
