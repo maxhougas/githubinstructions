@@ -1,0 +1,26 @@
+Branches can be created with multiple commands:
+ "git checkout -b <branch name>" will possibly create and switch to a local branch <branch name>.
+ "git branch <branch name>" will create, but NOT switch to <branch name>.
+  "git checkout <branch name>" will switch to <branch name>.
+
+***This is where you will do your dev work.***
+
+Run the usual:
+ "git add <file/folder>"
+ git commit -m "<comment>"
+
+"git push origin <branch name>" will create <branch name> in the remote repository and push to it.
+ NB this is also how you would create and push to the main branch when creating a new repository from the CLI.
+
+"git checkout <branch name>" will, amazingly, switch to <branch name>. In this case you will switch to the branch you wish to merge into. For demonstration purposes this is "main".
+
+"git pull" will synchronize your local repository with the remote. "main" for demonstration purposes.
+
+"git merge <branch name>" will attempt to merge <branch name> into the current branch ("main").
+
+"git push" will push the newly merged branch to the remote repository.
+
+"git branch -d <branch name>" will delete the local copy of <branch name>. It would be unwise to do this to "main".
+
+"git push origin --delete <branch name>" will delete the remote copy of <branch name>. It is still a bad idea to do this to "main".
+
