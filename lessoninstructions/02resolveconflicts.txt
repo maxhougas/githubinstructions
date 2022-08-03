@@ -35,7 +35,7 @@ Run "git commit -am 'generating conflict in branch main'".
 Run "git merge conflict".
  Git should inform you that there is a conflict that requires resolution.
 
-***RESOLVE CONFLICT***
+***RESOLVE LOCAL CONFLICT***
 
 Running "git diff main conflict" will display the differences between the version of helloworld.htm in branch main and branch conflict.
 
