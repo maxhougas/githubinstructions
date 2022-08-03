@@ -42,3 +42,5 @@ Run "git branch -d <branch name>" to delete your local copy of <branch name>. Us
 Run "git push origin --delete <branch name>" to delete the remote copy of <branch name>. Use "test" for <branch name>.
 
 Return to your browser and verify that the remote "test" branch has been deleted.
+
+***END LESSON 01***
