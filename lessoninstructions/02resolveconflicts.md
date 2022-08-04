@@ -1,22 +1,22 @@
 # LESSON 02: RESOLVING CONFLICTS
 
-This lesson assumes you have a fork of my test repository. If you do not:
- Open a browser and navigate to "https://github.com/maxhougas/test".
+This lesson assumes you have a fork of my test repository. If you do not:<br/>
+ Open a browser and navigate to "https://github.com/maxhougas/test".<br/>
  Click on the "Fork" button near the upper right and follow the on-screen instructions.
 
-Clone the fork if you have not already.
- Open your git bash shell and navigate to your github folder (probably C:\projects).
- Run "git clone https://github.com/[uname]/[repo]" where <uname> is your github user name and [repo] is the name you gave to the fork of my test repo.
+Clone the fork if you have not already.<br>
+ Open your git bash shell and navigate to your github folder (probably C:\projects).<br>
+ Run "git clone https://github.com/[uname]/[repo]" where [uname] is your github user name and [repo] is the name you gave to the fork of my test repo.
 
-Run "cd [repo]".
-Verify that line 7 of helloworld.htm contains "  &lt;title>Document&lt;/title>".
- If it does not, alter line 7 to "  &lt;title>Document&lt;/title>".
-  Run "git add .".
-  Run "git commit -m 'fixed line 7'".
-  Run "git push". 
+Run "cd [repo]".<br>
+Verify that line 7 of helloworld.htm contains "  &lt;title>Document&lt;/title>".<br>
+ If it does not, alter line 7 to "  &lt;title>Document&lt;/title>".<br>
+  Run "git add .".<br>
+  Run "git commit -m 'fixed line 7'".<br>
+  Run "git push".
 
-NB: the series of commands "git add [file]" "git commit -m '[message]'" can be shortened.
- ONLY IF [file] was the subject of a previous add, you may use "git commit -am 'message'" alone (note the -am).
+NB: the series of commands "git add [file]" "git commit -m '[message]'" can be shortened.<br>
+ ONLY IF [file] was the subject of a previous add, you may use "git commit -am 'message'" alone (note the -am).<br>
  THIS WILL FAIL WHEN YOU CHANGE FILES' NAMES.
 
 ## GENERATE A LOCAL CONFLICT
