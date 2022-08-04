@@ -1,3 +1,5 @@
+# LESSON 00: BASIC GIT
+
 ## INSTALLATION AND SETUP
 
 If you are on Windows, follow the pictures in ../installgitwindows/installgithub.htm.

@@ -1,4 +1,4 @@
-## LESSON 02
+# LESSON 02: RESOLVING CONFLICTS
 
 This lesson assumes you have a fork of my test repository. If you do not:
  Open a browser and navigate to "https://github.com/maxhougas/test".
@@ -6,31 +6,32 @@ This lesson assumes you have a fork of my test repository. If you do not:
 
 Clone the fork if you have not already.
  Open your git bash shell and navigate to your github folder (probably C:\projects).
- Run "git clone https://github.com/[uname]/[repo]" where <uname> is your github user name and <repo> is the name you gave to the fork of my test repo.
+ Run "git clone https://github.com/[uname]/[repo]" where <uname> is your github user name and [repo] is the name you gave to the fork of my test repo.
 
-Run "cd <repo>".
-Verify that line 7 of helloworld.htm contains "  <title>Document</title>".
- If it does not, alter line 7 to "  <title>Document</title>".
+Run "cd [repo]".
+Verify that line 7 of helloworld.htm contains "  &lt;title>Document&lt;/title>".
+ If it does not, alter line 7 to "  &lt;title>Document&lt;/title>".
   Run "git add .".
   Run "git commit -m 'fixed line 7'".
   Run "git push". 
 
-NB: the series of commands "git add <file>" "git commit -m '<message>'" can be shortened.
- ONLY IF <file> was the subject of a previous add, you may use "git commit -am 'message'" alone (note the -am).
+NB: the series of commands "git add [file]" "git commit -m '[message]'" can be shortened.
+ ONLY IF [file] was the subject of a previous add, you may use "git commit -am 'message'" alone (note the -am).
+ THIS WILL FAIL WHEN YOU CHANGE FILES' NAMES.
 
 ## GENERATE A LOCAL CONFLICT
 
 Run "git checkout -b conflict".
 
-Alter line 7 to "  <title>CONFLICT</title>" (whitespace should not matter).
+Alter line 7 to "  &lt;title>CONFLICT&lt;/title>" (whitespace should not matter).
 
 Run "git commit -am 'generating conflict in branch conflict'".
 
 Run "git checkout main".
 
-Very that line 7 of helloworld.htm once again contains "  <title>Document</title>".
+Very that line 7 of helloworld.htm once again contains "  &lt;title>Document&lt;/title>".
 
-Alter line 7 to "  <title>MAIN</title>".
+Alter line 7 to "  &lt;title>MAIN&lt;/title>".
 
 Run "git commit -am 'generating conflict in branch main'".
 
@@ -58,7 +59,7 @@ Notice that line 7 has been replaced with the following:
 
 "HEAD" refers to our current branch, "main"; "conflict" refers to the branch we attempted to merge, "conflict".
 
-Replace the above text in your copy of helloworld.htm with "  <title>Document</title>".
+Replace the above text in your copy of helloworld.htm with "  &lt;title>Document&lt;/title>".
 
 Save and exit.
 
@@ -71,7 +72,7 @@ Run "git push".
 ## GENERATE REMOTE CONFLICT
 
 Ensure that your helloworld.htm is in it's original state.
- I.e. line 7 contains "  <title>Document</title>".
+ I.e. line 7 contains "  &lt;title>Document&lt;/title>".
 
 Run:
  "mkdir ../test2"
@@ -86,7 +87,7 @@ Run:
 
 You should now have helloworld.htm in test2.
 
-Ensure that line 7 contains "  <title>Document</title>".
+Ensure that line 7 contains "  &lt;title>Document&lt;/title>".
  If it does not, change it to do so, then run:
   "git commit -am 'resetting helloworld.htm'"
   "git push"
@@ -94,14 +95,14 @@ Ensure that line 7 contains "  <title>Document</title>".
   "git pull"
   "cd ../test2"
 
-Edit line 7 of helloworld.htm to "  <title>test2</title>".
+Edit line 7 of helloworld.htm to "  &lt;title>test2&lt;/title>".
  Save and exit.
 
 Run "git push".
 
 Run "cd ../test".
 
-Edit line 7 of helloworld.htm to read "  <title>test</title>".
+Edit line 7 of helloworld.htm to read "  &lt;title>test&lt;/title>".
 
 Run "git commit -am 'generating conflict in test'".
 
@@ -122,10 +123,8 @@ Running "cat helloworld.htm" will show that conflicts have been logged.
 >>>>>>> 95ba4b9 (generating conflict 1)
 ```
 
-Open helloworld.htm in your favorite editor and replace the above with "  <title>Document</title>".
+Open helloworld.htm in your favorite editor and replace the above with "  &lt;title>Document&lt;/title>".
  Save and exit.
-
-
 
 Run:
  "git commit -am 'fixing conflict'".

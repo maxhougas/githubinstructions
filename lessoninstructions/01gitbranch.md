@@ -1,4 +1,6 @@
-# This lesson assumes you have successfully completed lesson 00.
+# LESSON 01: BRANCHES
+
+### This lesson assumes you have successfully completed lesson 00.
 - Check the section of ./00basicgit.txt labeled YOU SHOULD HAVE before continuing.
 
 Navigate to your local test repository (C:\gitprojects\test) and open your gitbash shell from the right click menu.
