@@ -9,6 +9,7 @@
 - git pull [url] : update local repo to match remote repo; [url] is unnecessary if ./.git/config is set properly.
 - git push [url] : update remote repo to match local repo; [url] is unnecessary if ./.git/config is set properly.
 - git push origin --delete [branch] : delete [branch] in remote repo.
+- git push -u origin [branch] : pushes changes to and possibly creates remote branch [branch].
 - git remote add origin [url] : manipulates .git/config such that origin is an alias for [url].
 
 ## Interacting with local
