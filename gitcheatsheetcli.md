@@ -13,6 +13,7 @@
 - git remote add origin [url] : manipulates .git/config such that origin is an alias for [url].
 
 ## Interacting with local
+- git init [folder] : sets up [folder] as a git repository.
 - git add [file] : sets [file] to be tracked by local repo and stages it for committing. This command is recursive.
 - git commit -m '[message]' : commits staged files with commit message [message].
 - git commit -am '[message]' : stages and commits all tracked files with commit message [message].
