@@ -1,4 +1,5 @@
-# This lesson assumes you have successfully completed lesson 00. Check the section of ./00basicgit.txt labeled YOU SHOULD HAVE before continuing.
+# This lesson assumes you have successfully completed lesson 00.
+- Check the section of ./00basicgit.txt labeled YOU SHOULD HAVE before continuing.
 
 Navigate to your local test repository (C:\gitprojects\test) and open your gitbash shell from the right click menu.
 
@@ -12,7 +13,7 @@ Run "git checkout -b [branch name]" using "test" for the branch name.
 
 Open ./helloworld.htm in your favorite editor.
 
-Update line 7 of ./helloworld.htm by changing "  &lttitle>Document&lt/title> to "  <title>Hello World</title>".
+Update line 7 of ./helloworld.htm by changing "  &lt title>Document&lt/title> to "  <title>Hello World</title>".
 
 Save the file.
 
