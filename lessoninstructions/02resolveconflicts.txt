@@ -66,4 +66,8 @@ Run "git branch -d conflict".
 
 Run "git push".
 
+***RESOURCES***
+
+https://www.atlassian.com/git/tutorials/using-branches/merge-conflicts
+
 ***END LESSON 02***
