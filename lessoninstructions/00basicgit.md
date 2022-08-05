@@ -2,7 +2,7 @@
 
 ## INSTALLATION AND SETUP
 
-If you are on Windows, follow the pictures in ../installgitwindows/installgithub.htm.
+If you are on Windows, follow the pictures in ../installgitwindows/installgithub.htm or README.md<br/>
  Written instructions are in the mouseover text for each picture.
 
 If you are on Linux, follow your heart.
@@ -25,7 +25,7 @@ Set the expiration to "No expiration".
 
 Check all checkboxes.
 
-### DO NOT CONTINUE UNTIL YOU HAVE READ THROUGH!***
+### DO NOT CONTINUE UNTIL YOU HAVE READ THROUGH!
 
 Click "Generate token" at the bottom.
 
@@ -43,7 +43,7 @@ Name your repository "test" and give it a description. Optionally check the box 
 
 Click "Create repository" at the bottom.
 
-If you chose to create a README file, you will be shown a list of files in your new repository (so far just README.md).
+If you chose to create a README file, you will be shown a list of files in your new repository (so far just README.md).</br>
  Click the green code button to be presented with an HTTPS url.
 
 If you chose not to create a README file the HTTPS url will be near the top of the page.
@@ -52,11 +52,11 @@ Your repository URL should follow the pattern "https://github.com/[url]/test.git
 
 Open your bash shell.
 
-Navigate to the folder you would like to clone your repository to.
- NB: Cloning a repository will create a sub-folder.
+Navigate to the folder you would like to clone your repository to.<br/>
+ NB: Cloning a repository will create a sub-folder.<br/>
  NB: Creating a root folder to store all or most of your github projects is recommended. These lessons will assume it is C:\gitprojects.
 
-Run "git clone [url]".
+Run "git clone [url]".<br/>
  If you have problems with your url try removing .git from the end.
 
 Cloning your repository will create a new folder called "test" (or whatever you named your repository).
@@ -64,26 +64,26 @@ Cloning your repository will create a new folder called "test" (or whatever you 
 Run "cd test"
 
 ### DEPRICATED
-Use your favorite text editor to open "config". It may be easier to do this from the Windows GUI file explorer.
+Use your favorite text editor to open "config". It may be easier to do this from the Windows GUI file explorer.</br>
  You may have to enable view hidden files. It will be under the "View" menu near the top of the window. The option is a checkbox called "Hidden items". It is a good idea to also check "File name extensions".
 
 Look for a line that starts with "url =". It sould be under the heading [remote "origin"].
 
-Between "https://" and "github" insert the pattern [uname]:[PAT]@
+Between "https://" and "github" insert the pattern [uname]:[PAT]@<br/>
  Your new line should look like "https://[uname]:[PAT]@github.com/[uname]/test.git".
 ### DEPRICATED
 
 ### DO NOT CONTINUE UNTIL YOU HAVE READ THROUGH
 
-Run 'echo "https://[uname]:[PAT]@github.com" > ~/.git-credentials'. DO NOT SHOW THIS LINE TO ANYONE.
- On Windows this file is usually located at C:\Users\[uname]\.git-credentials.
+Run 'echo "https://[uname]:[PAT]@github.com" > ~/.git-credentials'. DO NOT SHOW THIS LINE TO ANYONE.<br/>
+ On Windows this file is usually located at C:\Users\[uname]\.git-credentials.<br/>
  NB: This will store your credentials in PLAINTEXT!
 
 ### YOU MAY NOW CONTINUE
 
 Save changes and close your editor.
 
-Run "cd ..". You should be in the folder "C:\gitprojects\test".
+Run "cd ..". You should be in the folder "C:\gitprojects\test".<br/>
  The gitbash shell will refer to this as "/c/gitprojects/test". The "pwd" command will print out your current directory (folder).
 
 ### DEPRICATED
@@ -112,7 +112,7 @@ A folder "C:\gitprojects\test\.git"
 
 A file "C:\gitprojects\test\helloworld.htm"
 
-A remote repository "https://github.com/[uname]/test" CONTAINING:
+A remote repository "https://github.com/[uname]/test" CONTAINING:<br/>
  A file "helloworld.htm" which is a copy of ./helloworld.htm.
 
 ### This will be referred to as the [BASE STATE].

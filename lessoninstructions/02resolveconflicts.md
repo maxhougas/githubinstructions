@@ -15,6 +15,8 @@ Verify that line 7 of helloworld.htm contains "  &lt;title>Document&lt;/title>".
   Run "git commit -m 'fixed line 7'".<br/>
   Run "git push".
 
+### Your local repo should be in the [BASE STATE]
+
 NB: the series of commands "git add [file]" "git commit -m '[message]'" can be shortened.<br>
  ONLY IF [file] was the subject of a previous add, you may use "git commit -am 'message'" alone (note the -am).<br>
  THIS WILL FAIL WHEN YOU CHANGE FILES' NAMES.
