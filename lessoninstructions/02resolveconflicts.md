@@ -80,7 +80,7 @@ Run:<br/>
  "mkdir ../test2"<br/>
  "cd ../test2"
 
-Run:
+Run:</br>
  "git init"<br/>
  "git remote add origin [url]"<br/>
  "git checkout -b main"<br/>
