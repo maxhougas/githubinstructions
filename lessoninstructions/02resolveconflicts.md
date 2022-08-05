@@ -138,4 +138,20 @@ https://swcarpentry.github.io/git-novice/09-conflict/
 
 https://www.atlassian.com/git/tutorials/using-branches/merge-conflicts
 
+
+## REVERTING CHANGES
+
+If you need your local and remote repo in the [BASE STATE] you can use the "git revert [hash] -n" command.
+
+Running "git log" will display a list of commits each with its associate message and [hash].</br>
+ The gui on github.com will also show differences.
+
+Run:<br/>
+ "git revert [hash] -n".<br/>
+  If you get a conflict here, fix the conflict in your editor.<br/>
+ "git commit -am "[message]". Message should metion the commit you reverted.<br/>
+ "git push".<br/>
+ NB: This will "undo" the changes associated with commit [hash] rather than reverting to commit [hash].<br/>
+  I.e. you may need to one commit farther ahead than you think.
+
 ## END LESSON 02

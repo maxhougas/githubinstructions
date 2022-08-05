@@ -7,7 +7,7 @@ Navigate to your local test repository (C:\gitprojects\test) and open your gitba
 
 ## VERIFY LOCAL REPO
 
-Ensure that your local repository is synced with your remote:
+Ensure that your local repository is synced with your remote:<br/>
  Run "git pull".
 
 ### Your local repo should be in the [BASE STATE]
