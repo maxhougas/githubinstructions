@@ -73,8 +73,8 @@ Run "git push".
 
 ## GENERATE REMOTE CONFLICT
 
-Ensure that your helloworld.htm is in it's original state.</br>
- I.e. line 7 contains "  &lt;title>Document&lt;/title>".
+Ensure that your repo is in the [BASE STATE]</br>
+ I.e. line 7 of helloworld.htm contains "  &lt;title>Document&lt;/title>".
 
 Run:<br/>
  "mkdir ../test2"<br/>
