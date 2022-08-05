@@ -10,9 +10,11 @@ Navigate to your local test repository (C:\gitprojects\test) and open your gitba
 Ensure that your local repository is synced with your remote:
  Run "git pull".
 
+### Your local repo should be in the [BASE STATE]
+
 ## CREATE NEW BRANCH
 
-Run "git checkout -b [branc]" using "test" for [branch].
+Run "git checkout -b [branch]" using "test" for [branch].
  This will create and switch to a branch named "test".
 
 ## ALTER FILE

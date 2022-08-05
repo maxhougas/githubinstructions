@@ -115,7 +115,7 @@ A file "C:\gitprojects\test\helloworld.htm"
 A remote repository "https://github.com/[uname]/test" CONTAINING:
  A file "helloworld.htm" which is a copy of ./helloworld.htm.
 
-## This will be referred to as the [BASE STATE].
+### This will be referred to as the [BASE STATE].
 ### Subsequent lessons will assume your repository conforms to this standard.
 
 ## END LESSON 00
