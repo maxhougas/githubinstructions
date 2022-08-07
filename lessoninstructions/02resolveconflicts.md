@@ -11,9 +11,10 @@ Clone the fork if you have not already.<br/>
 Run "cd [repo]".<br/>
 Verify that line 7 of helloworld.htm contains "  &lt;title>Document&lt;/title>".<br/>
  If it does not, alter line 7 to "  &lt;title>Document&lt;/title>".<br/>
-  Run "git add .".<br/>
-  Run "git commit -m 'fixed line 7'".<br/>
-  Run "git push".
+  Run:<br/>
+   "git add .".<br/>
+   "git commit -m 'fixed line 7'".<br/>
+   "git push".
 
 ### Your local repo should be in the [BASE STATE]
 
