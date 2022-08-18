@@ -24,7 +24,8 @@
 - git merge [branch] : merge [branch] into current branch.
 - git diff [brancha] [branchb] : display differences between [brancha] and [branchb]. Remote repos can be referenced with origin.[branch].
 - git checkout -b [branch] [hash] : makes a new branch [branch] that is a copy of commit [hash].
-- git reset --hard [hash] : removes all commits after commit [hash]. YOU WILL LOSE DATA.
+- git reset --hard [hash] : removes all commits after commit [hash]. <strong>YOU WILL LOSE DATA</strong>.
+- git reset HEAD --hard : undoes all changes since last commit. <strong>YOU WILL LOSE DATA</strong>.
 - git stash : store current commit temporarily.
 - git stash pop : merge stashed commit e.g. after a "git reset --hard [hash]".
 - git revert [hash] -n : reverts changes made my commit [hash] and those after; may cause conflicts.
