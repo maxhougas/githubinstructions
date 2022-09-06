@@ -144,7 +144,7 @@ https://www.atlassian.com/git/tutorials/using-branches/merge-conflicts
 
 If you need your local and remote repo in the [BASE STATE] you can use the "git revert [hash] -n" command.
 
-Running "git log" will display a list of commits each with its associate message and [hash].</br>
+Running "git log" will display a list of commits each with its associated message and [hash].</br>
  The gui on github.com will also show differences.
 
 Run:<br/>
