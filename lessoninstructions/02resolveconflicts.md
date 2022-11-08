@@ -66,11 +66,10 @@ Replace the above text in your copy of helloworld.htm with "  &lt;title>Document
 
 Save and exit.
 
-Run "git commit -am 'resolved conflict'".
-
-Run "git branch -d conflict".
-
-Run "git push".
+Run:<br/>
+ "git commit -am 'resolved conflict'".<br/>
+ "git branch -d conflict".<br/>
+ "git push".<br/>
 
 ## GENERATE REMOTE CONFLICT
 
@@ -100,6 +99,8 @@ Ensure that line 7 contains "  &lt;title>Document&lt;/title>".<br/>
 
 Edit line 7 of helloworld.htm to "  &lt;title>test2&lt;/title>".<br/>
  Save and exit.
+
+Run "git commit -am 'generating conflict in test2'"
 
 Run "git push".
 
